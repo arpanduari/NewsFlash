@@ -70,13 +70,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <!-- Brand on the left -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-body-tertiary">
+        <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}">NewsFlash</a>
-
-            <!-- Categories on the right -->
-            <div class="d-flex justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'category_news' 'business' %}">Business</a>
@@ -98,6 +99,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'category_news' 'technology' %}">Technology</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
                     </li>
                 </ul>
             </div>
@@ -126,7 +130,7 @@
         crossorigin="anonymous"></script>
     <footer class="bg-dark text-light text-center py-3">
         <p>&copy {% now "Y" %} NewsFlash. All rights reserved.</p>
-        <a href="mailto:arpanduari26@email.com">Contact: arpanduari26@email.com</a>
+        <a href="mailto:arpanduari26@email.com">Contact: arpanduari26@email.com</p>
     </footer>
 </body>
 
