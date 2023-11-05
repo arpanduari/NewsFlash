@@ -33,3 +33,9 @@ Contributions are welcome! Please feel free to open issues, submit pull requests
 
 Contact
 Email: [arpanduari26@email.com](mailto:arpanduari26@email.com)
+## Home
+![Home](23e24df0-6102-4c93-8ca9-db6f2d08b390.jpg)
+## Category Technology
+![Technology](b32ed995-3afb-40a0-94b2-4b631fd5f8aa.jpg)
+## Search Result
+![Search](fd876f50-b5f5-4b05-a2af-d0afe969baa1.jpg)
