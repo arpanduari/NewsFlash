@@ -35,3 +35,5 @@ def search_result(request):
             )
         else:
             return redirect("home")
+def about(request):
+    return render(request, "news/about.html")
