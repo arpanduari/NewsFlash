@@ -24,4 +24,5 @@ urlpatterns = [
     path("", newsview.index, name="home"),
     path("category/<str:category>/", newsview.category_news, name="category_news"),
     path("search/", newsview.search_result, name="search_result"),
+    path("about/", newsview.about, name="about"),
 ]
