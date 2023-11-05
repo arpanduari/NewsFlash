@@ -32,4 +32,4 @@ Contributing
 Contributions are welcome! Please feel free to open issues, submit pull requests, or provide feedback.
 
 Contact
-Email: [arpanduari26@email.com](arpanduari26@email.com)
+Email: [arpanduari26@email.com](mailto:arpanduari26@email.com)
