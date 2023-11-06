@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 import os
 import requests
+import random
 
 API_KEY = os.environ.get("NEWS_API")
 BASE_URL = f"https://newsapi.org/v2/top-headlines?apikey={API_KEY}&country=in"
@@ -10,7 +11,7 @@ BASE_URL_E = f"https://newsapi.org/v2/everything?apikey={API_KEY}"
 # Create your views here.
 def index(request):
     top_news = requests.get(f"{BASE_URL}").json()
-    return render(request, "news/index.html", context={"newses": top_news["articles"]})
+    return render(request, "news/index.html", context={"newses": random.shuffle(top_news["articles"])})
 
 
 def category_news(request, category):
@@ -19,7 +20,7 @@ def category_news(request, category):
     return render(
         request,
         "news/category_news.html",
-        context={"newses": top_news["articles"], "category": category},
+        context={"newses": random.shuffle(top_news["articles"]), "category": category},
     )
 
 
@@ -31,7 +32,7 @@ def search_result(request):
             return render(
                 request,
                 "news/query.html",
-                context={"newses": all_news["articles"], "q": search_query},
+                context={"newses": random.shuffle(all_news["articles"]), "q": search_query},
             )
         else:
             return redirect("home")
